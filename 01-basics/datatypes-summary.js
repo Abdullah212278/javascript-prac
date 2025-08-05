@@ -34,3 +34,30 @@ const myFunction = function (){
 }
 
 console.log(typeof myFunction);
+
+
+// ++++++++++++++++++++++++++++++++++++
+
+// Stack (Permitive), Heap (Non-Permitive)
+
+let myYoutubeName = "Abdullah.com"
+
+let anotherName = myYoutubeName
+anotherName = "babu"
+
+console.log(anotherName);
+console.log(myYoutubeName);
+
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+
+let userTwo = userOne
+
+userTwo.email = "abdullah"
+
+console.log(userOne.email);
+console.log(userTwo.email);
